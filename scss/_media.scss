@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+@media (max-width: 825px) {
+  .card-container {
+    grid-template-columns: repeat(1, minmax(auto, 400px));
+
+    .sedan {
+      border-radius: $radius $radius 0 0;
+    }
+
+    .luxury {
+      border-radius: 0 0 $radius $radius;
+    }
+
+    .car-section {
+      .btn {
+        margin-top: 0;
+      }
+    }
+  }
+}

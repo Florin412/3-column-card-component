@@ -1,0 +1,72 @@
+@use "variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+.card-container {
+  display: grid; // Layout.
+  grid-template-columns: repeat(3, minmax(auto, 306px));
+  margin: 5.5rem 1.5rem; // This margin is for mobile devices.
+
+  .sedan {
+    background-color: $bright-orange;
+    border-radius: $radius 0 0 $radius;
+
+    .sedan-btn {
+      color: $bright-orange;
+    }
+  }
+
+  .suv {
+    background-color: $dark-cyan;
+
+    .suv-btn {
+      color: $dark-cyan;
+    }
+  }
+
+  .luxury {
+    background-color: $very-dark-cyan;
+    border-radius: 0 $radius $radius 0;
+
+    .luxury-btn {
+      color: $very-dark-cyan;
+    }
+  }
+
+  .car-section {
+    display: flex; // Layout.
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    padding: 3rem;
+
+    .title {
+      font-family: "Big Shoulders Display", cursive;
+      font-size: 2.5rem;
+      color: $very-light-gray;
+    }
+
+    .description {
+      color: $transparent-white;
+      line-height: 1.7;
+    }
+
+    .btn {
+      border: none; // Remove default properties.
+      font-family: inherit;
+      font-size: inherit;
+
+      padding: 0.76rem 1.85rem;
+      border-radius: 10000px;
+      margin-top: 3rem;
+      cursor: pointer;
+      border: 2px solid $very-light-gray;
+
+      &:hover {
+        background-color: transparent;
+        color: $very-light-gray;
+        transition: 0.4s;
+      }
+    }
+  }
+}
