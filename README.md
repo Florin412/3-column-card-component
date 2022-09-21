@@ -1,4 +1,4 @@
-# 3-column preview card component
+# 3 column preview card component
 
 ![](./design/desktop-preview.jpg)
 
