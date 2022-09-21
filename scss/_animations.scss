@@ -1,0 +1,33 @@
+// Keyframes for desktop browsers
+@keyframes sedan_drop {
+  from {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes suv_drop {
+  from {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes luxury_drop {
+  from {
+    transform: translateY(-100vh);
+  }
+}
+
+// Keyframes for mobile browsers
+@media (max-width: 825px) {
+  @keyframes suv_drop {
+    from {
+      transform: translateY(-200vh);
+    }
+  }
+
+  @keyframes luxury_drop {
+    from {
+      transform: translateY(-300vh);
+    }
+  }
+}

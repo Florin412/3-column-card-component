@@ -9,6 +9,7 @@
   .sedan {
     background-color: $bright-orange;
     border-radius: $radius 0 0 $radius;
+    animation: sedan_drop 0.5s ease-in-out backwards;
 
     .sedan-btn {
       color: $bright-orange;
@@ -17,6 +18,7 @@
 
   .suv {
     background-color: $dark-cyan;
+    animation: suv_drop 0.5s ease-in-out backwards 0.2s;
 
     .suv-btn {
       color: $dark-cyan;
@@ -26,6 +28,7 @@
   .luxury {
     background-color: $very-dark-cyan;
     border-radius: 0 $radius $radius 0;
+    animation: luxury_drop 0.5s ease-in-out backwards 0.4s;
 
     .luxury-btn {
       color: $very-dark-cyan;
@@ -61,11 +64,11 @@
       margin-top: 3rem;
       cursor: pointer;
       border: 2px solid $very-light-gray;
+      transition: 0.2s;
 
       &:hover {
         background-color: transparent;
         color: $very-light-gray;
-        transition: 0.4s;
       }
     }
   }
